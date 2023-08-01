@@ -21,25 +21,26 @@ function calcCirc() {
 
     let o=Math.PI
     
-    let result="A área do círculo"+o*a**2+"m²";
-    document.getElementById("valorCirc").innerHTML = result;
+    let result="A área do círculo é "+o*a**2+"m²";
 
-    alert("A área do círculo é a "+result+"m²");
+    document.getElementById("valorCirc").innerHTML = result;
 }
 
 function calcTrap() {
     let a=Number(prompt("Qual é o tamanho da base MAIOR?"));
     let b=Number(prompt("Qual é o tamanho da base MENOR?"));
     let c=Number(prompt("Qual é a altura?"));
-    
-    let result=(a+b)*c/2;
-    alert("A área da forma é igual a "+result+"m²");
+
+    let result="A área do trapézio é "+(a+b)*c/2+"m²";
+
+    document.getElementById("valorTrap").innerHTML = result;
 }
 
 function calcLosa() {
     let a=Number(prompt("Qual é o tamanho da diagonal MAIOR?"));
     let b=Number(prompt("Qual é o tamanho da diagonal MENOR?"));
     
-    let result=a*b/2;
-    alert("A área da forma é igual a "+result+"m²");
+    let result="A área do losango é "+a*b/2+"m²";
+
+    document.getElementById("valorLosa").innerHTML = result;
 }
