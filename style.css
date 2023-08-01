@@ -18,25 +18,40 @@ img {
 /* fim reset */
 .base {
     width: 100vw;
+    height: 100vh;
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     flex-wrap: wrap;
+    
+    background-image: linear-gradient(#0000ff, rgb(208, 0, 249))
 }
 
 .fundo {
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    margin: 10px;
+
+    display: flex;
+
+    transition: 500ms;
 
     border: 1px solid #000000;
-    background-color: aqua;
+    background-color: #c4c4c4;
 
-    margin: 10px;
+    font: 500 30px Arial;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.fundo :hover {
-    transform: translateY(10px);
+.fundo:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 10px -5px #000000;
 
+    background-color: rgb(255, 255, 255);
 }
