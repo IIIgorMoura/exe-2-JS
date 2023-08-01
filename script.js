@@ -44,3 +44,6 @@ function calcLosa() {
 
     document.getElementById("valorLosa").innerHTML = result;
 }
+
+// ter 2 getElement para obter a informação do form ".innerhtml"
+// dps extrair valor com .value
